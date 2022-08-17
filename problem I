@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	string A; int i = 0;  int j = 1;
+	cin >> A;
+	int y = A.size();
+	for (i = 0; i < (y- 2); i++)
+	{
+		if (A[i] == A[y - j])
+			j++;
+		else
+		{
+			cout << "NO";
+			return 0;
+		}
+	}
+	cout << "YES";
+	return 0;
+}
