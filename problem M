@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	string A; string B = "hello"; int i = 0;  int counter = 0; int j = 0;
+	cin >> A;
+	for (i = 0; i < A.size(); i++)
+	{
+		if (A[i] == B[j])
+		{
+			counter++;
+			j++;
+		}
+	}
+	if (B.size() == counter)
+		cout << "YES";
+	else
+		cout << "NO";
+	return 0;
+}
