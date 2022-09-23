@@ -1,0 +1,19 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	string S;
+	cin >> S;
+	int B = S.size();
+	int freq[200] = { 0 };
+	int i = 0;
+	for (i = 0; i < B; i++)
+		freq[S[i]]++;
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		if(freq[i]!=0)
+		cout <<char(i)<<" : " << freq[i] << endl;
+	}
+	   return 0;
+}
